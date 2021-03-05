@@ -5,6 +5,10 @@ body {
 .header {
     display: flex;
     justify-content: center;
+    font-family: 'Lobster';
+    color: #00ff80;
+    font-size: 40px;
+    padding: 0 0 25px;
 }
 
 .searcher {
