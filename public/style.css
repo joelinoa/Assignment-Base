@@ -26,6 +26,7 @@ body {
 
 .name {
     font-weight: bold;
+    text-transform: uppercase;
 }
 .address {
     font-style: italic;
