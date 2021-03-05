@@ -16,14 +16,12 @@ body {
 
 .bar {
     display: flex;
+    align-items: flex-start;
     box-sizing: border-box;
-    background-color: white;
+    background-color: rgb(184, 240, 184);
     padding: 8px;
     border-radius: 4px;
-}
-.search {
-    display: flex;
-    justify-content: center;
+    justify-content:center;
 }
 
 .name {
@@ -38,9 +36,9 @@ body {
 }
 
 .suggestions li {
-    background-image: linear-gradient(rgb(252, 252, 156),white);
+    background-image: linear-gradient(rgb(184, 240, 184),white);
     flex-wrap: wrap;
     padding: 8px;
     border-radius: 4px;
-    margin: auto;
+    margin: 10px ;
 }

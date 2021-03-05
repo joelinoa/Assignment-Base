@@ -13,7 +13,7 @@ async function windowActions() {
     function displayMatches(event) {
         const matchArray = findMatches(event.target.value, restaurants);
         const html = matchArray.map(place => {
-            const regex = RegExp(event.target.value, 'gi');
+            const regex = RegExp(event.target.value, 'g');
             const restName = place.name.replace(regex, `<span class="hl">${event.target.value}</span>`);
             const restZip = place.zip.replace(regex, `<span class="hl">${event.target.value}</span>`);
             return `
