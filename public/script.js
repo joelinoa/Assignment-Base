@@ -20,7 +20,7 @@ async function windowActions() {
                 <li>
                     <span class="name">${restName}</span></br>
                     <span class="category">${place.category}</span></br>
-                    <span class="address">${place.address_line_1}</span>
+                    <span class="address">${place.address_line_1} </span></br>
                     <span class="address">${place.state} </span>
                     <span class="address">${place.zip} </span>
                 </li>
