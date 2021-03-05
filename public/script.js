@@ -6,7 +6,7 @@ async function windowActions() {
     function findMatches(zipToMatch, restaurants) {
         return restaurants.filter(place => {
             const regex = new RegExp(zipToMatch, 'gi');
-            return place.zip.match(regex) || place.name.match(regex)
+            return place.zip.match(regex) || place.name.match(regex) || place.category.match(regex)
         });
     }
     
@@ -14,14 +14,13 @@ async function windowActions() {
         const matchArray = findMatches(event.target.value, restaurants);
         const html = matchArray.map(place => {
             const regex = RegExp(event.target.value, 'gi');
-            const restName = place.name.replace(regex, `<span class="/h1">${event.target.value}</span>`);
-            const restZip = place.zip.replace(regex, `<span class="/h1">${event.target.value}</span>`);
+            const restName = place.name.replace(regex, `<span class="hl">${event.target.value}</span>`);
+            const restZip = place.zip.replace(regex, `<span class="hl">${event.target.value}</span>`);
             return `
                 <li>
-                    <span class="name">${restName}</span>
-                    <span class="address">${place.address_line_1}</span>
-                    <span class="zip">${restZip}</span>
-                    <span class="category">${place.category}</span>
+                    <span class="name">${restName}</span></br>
+                    <span class="category">${place.category}</span></br>
+                    <span class="address">${place.address_line_1} ${place.zip} ${place.state}</span>
                 </li>
             `;
         }).join('');

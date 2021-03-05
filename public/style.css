@@ -1,0 +1,46 @@
+body {
+    background: gray;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.searcher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.bar {
+    display: flex;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-weight: bold;
+}
+.address {
+    font-style: italic;
+}
+
+.category  {
+    font-style: italic;
+}
+
+.suggestions li {
+    background-image: linear-gradient(rgb(252, 252, 156),white);
+    flex-wrap: wrap;
+    padding: 8px;
+    border-radius: 4px;
+    margin: auto;
+}
