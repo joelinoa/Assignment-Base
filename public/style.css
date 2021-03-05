@@ -1,0 +1,45 @@
+body {
+    background: gray;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.searcher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.bar {
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    background-color: rgb(184, 240, 184);
+    padding: 8px;
+    border-radius: 4px;
+    justify-content:center;
+}
+
+.name {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.address {
+    font-style: italic;
+}
+
+.category  {
+    font-style: italic;
+}
+
+.suggestions li {
+    background-image: linear-gradient(rgb(184, 240, 184),white);
+    flex-wrap: wrap;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 10px ;
+}
